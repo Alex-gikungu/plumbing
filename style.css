@@ -341,7 +341,8 @@
     display: flex;
     align-items: center;
     background-color: cornflowerblue;
-
+    width: auto;
+    
   }
   
   .heading ul {
@@ -648,10 +649,23 @@
   /* Media Query for smaller laptops */
   @media only screen and (max-width: 1024px) {
     .main {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
   }
   
+
+  @media only screen and (max-width: 768px) {
+    
+   .heading {
+    display: flex;
+    align-items: center;
+    background-color: cornflowerblue;
+    width: auto;
+    
+  }
+  }
+
+
   /* Media Query for tablets */
   @media only screen and (max-width: 768px) {
     .heading ul {
@@ -676,88 +690,13 @@
       padding: 5px;
       font-size: 1rem;
     }
+   .heading {
+    display: flex;
+    align-items: center;
+    background-color: cornflowerblue;
+    width: auto;
+    
+  }
   }
   
 
-/* CSS code for the plumbing website with media queries */
-
-/* Styles for laptop and desktop screens */
-@media (min-width: 992px) {
-  /* Adjustments for the header */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-
-  /* Adjustments for the navigation menu */
-  header ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-  }
-
-  /* Adjustments for the content section */
-  .main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  
-  /* Adjustments for the footer */
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-}
-
-/* Styles for smartphones and small phones */
-@media (max-width: 576px) {
-  /* Adjustments for the header */
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
-
-  /* Adjustments for the navigation menu */
-  header ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    gap: 10px;
-  }
-
-  /* Adjustments for the content section */
-  .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  /* Adjustments for the footer */
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
-}
-
-/* Additional adjustments for specific screen sizes if needed */
-@media (min-width: 1200px) {
-  /* CSS adjustments for larger desktop screens */
-}
-
-@media (max-width: 768px) {
-  /* CSS adjustments for smaller tablets */
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  /* CSS adjustments for larger smartphones and smaller tablets */
-}
