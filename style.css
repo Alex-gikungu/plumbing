@@ -649,7 +649,7 @@
   /* Media Query for smaller laptops */
   @media only screen and (max-width: 1024px) {
     .main {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
   }
   
@@ -700,3 +700,38 @@
   }
   
 
+/* CSS code for the plumbing website with media queries */
+
+/* Styles for smartphones */
+@media (max-width: 576px) {
+  /* Adjustments for the header */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  /* Adjustments for the navigation menu */
+  header ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+  }
+
+  /* Adjustments for the contact information */
+  #cnt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  /* Adjustments for the contact information icons */
+  #cnt img {
+    width: 30px;
+    height: 30px;
+  }
+}
