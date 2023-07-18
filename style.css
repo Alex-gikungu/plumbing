@@ -667,6 +667,12 @@
       padding: 10px;
       font-size: 1.2rem;
     }
+    .footer {
+      width: 100%;
+    }
+    .heading{
+      width: 100%;
+    }
   }
   
   /* Media Query for smartphones */
@@ -688,6 +694,9 @@
     background-color: cornflowerblue;
     color: #fff;
     padding: 40px 0;
+    width: 100%;
+  }
+  .heading{
     width: 100%;
   }
   }
@@ -728,6 +737,12 @@
   #cnt img {
     width: 30px;
     height: 30px;
+  }
+  .heading{
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
   }
 }
 
