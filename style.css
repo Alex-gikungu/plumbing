@@ -655,9 +655,6 @@
   
   /* Media Query for tablets */
   @media only screen and (max-width: 768px) {
-    body{
-      width: 100%;
-    }
     .heading ul {
       margin-left: 0;
       padding: 20px;
@@ -667,17 +664,11 @@
       padding: 10px;
       font-size: 1.2rem;
     }
-    .footer {
-      width: 100%;
-    }
-    .heading{
-      width: 100%;
-    }
   }
   
   /* Media Query for smartphones */
   @media only screen and (max-width: 480px) {
-    body{
+    .body{
       width: 100%;
     }
     .heading ul {
@@ -689,16 +680,6 @@
       padding: 5px;
       font-size: 1rem;
     }
-     
-  .footer {
-    background-color: cornflowerblue;
-    color: #fff;
-    padding: 40px 0;
-    width: 100%;
-  }
-  .heading{
-    width: 100%;
-  }
   }
   
 /* CSS code for the plumbing website with media queries */
@@ -707,7 +688,7 @@
 @media (max-width: 576px) {
   /* Adjustments for the header */
   body{
-    width: 100%;
+    width: 100;
   }
   header {
     display: flex;
