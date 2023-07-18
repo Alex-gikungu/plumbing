@@ -653,21 +653,11 @@
     }
   }
   
-
-  @media only screen and (max-width: 768px) {
-    
-   .heading {
-    display: flex;
-    align-items: center;
-    background-color: cornflowerblue;
-    width: auto;
-    
-  }
-  }
-
-
   /* Media Query for tablets */
   @media only screen and (max-width: 768px) {
+    body{
+      width: 100%;
+    }
     .heading ul {
       margin-left: 0;
       padding: 20px;
@@ -681,6 +671,9 @@
   
   /* Media Query for smartphones */
   @media only screen and (max-width: 480px) {
+    body{
+      width: 100%;
+    }
     .heading ul {
       margin-left: 0;
       padding: 10px;
@@ -690,21 +683,16 @@
       padding: 5px;
       font-size: 1rem;
     }
-   .heading {
-    display: flex;
-    align-items: center;
-    background-color: cornflowerblue;
-    width: auto;
-    
-  }
   }
   
-
 /* CSS code for the plumbing website with media queries */
 
 /* Styles for smartphones */
 @media (max-width: 576px) {
   /* Adjustments for the header */
+  body{
+    width: 100%;
+  }
   header {
     display: flex;
     flex-direction: column;
@@ -735,3 +723,4 @@
     height: 30px;
   }
 }
+
