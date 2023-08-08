@@ -138,65 +138,6 @@
   }
   
   
-  .footer {
-    background-color: cornflowerblue;
-    color: #fff;
-    padding: 40px 0;
-  }
-  
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-    font-size: x-large;
-  }
-  .container p{
-    font-size: x-large;
-  }
-  .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .footer-section {
-    flex: 1 0 300px;
-    margin-bottom: 20px;
-  }
-  
-  .footer-section h3 {
-    margin-bottom: 10px;
-  }
-  
-  .footer-section p {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  
-  .social-links {
-    display: flex;
-    list-style: none;
-    padding: 0;
-  }
-  
-  .social-links li {
-    margin-right: 10px;
-  }
-  
-  .social-links a {
-    color: #fff;
-    font-size: 20px;
-  }
-  
-  .footer-bottom {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .footer-bottom p {
-    font-size: 14px;
-  }
-  
   .bout {
     display: flex;
     flex-direction: column;
@@ -204,9 +145,8 @@
     justify-content: center;
     height: 400px;
     width: 800px;
-    /* background-color: lightgray; */
     margin-bottom: 20px;
-    margin-left: 30%;
+    /* margin-left: 30%; */
   }
   
   .bout h1,
@@ -231,9 +171,8 @@
     justify-content: center;
     height: 200px;
     width: 800px;
-    /* background-color: lightgray; */
-    margin-bottom: 50px;
     margin-left: 30%;
+    margin-bottom: 200px;
   }
   
   .bout2 h1 {
@@ -310,85 +249,164 @@
     padding-left: 60px;
   }
   
-  /* Media Query for laptops */
-  @media only screen and (max-width: 1366px) {
-    .main {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  /* Media Query for smaller laptops */
-  @media only screen and (max-width: 1024px) {
-    .main {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-  
-  /* Media Query for tablets */
-  @media only screen and (max-width: 768px) {
-    .heading ul {
-      margin-left: 0;
-      padding: 20px;
-      display: block;
-    }
-    .heading li {
-      padding: 10px;
-      font-size: 1.2rem;
-    }
-  }
-  
-  /* Media Query for smartphones */
-  @media only screen and (max-width: 480px) {
-    .body{
-      width: 100%;
-    }
-    .heading ul {
-      margin-left: 0;
-      padding: 10px;
-      display: block;
-    }
-    .heading li {
-      padding: 5px;
-      font-size: 1rem;
-    }
-  }
-  
-/* CSS code for the plumbing website with media queries */
 
-/* Styles for smartphones */
-@media (max-width: 576px) {
-  /* Adjustments for the header */
-  body{
-    width: 100;
+.bout {
+  float: left;
+  margin-right: 20px; 
+}
+
+.whole img {
+  float:left;
+  margin: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: cornflowerblue;
+  color: #fff;
+  font-size: larger;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size:large;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container p{
+  font-size: x-large;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 0 300px;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* Your existing CSS styles */
+/* 
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+} */
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.footer-section h3 {
+  font-size:x-large;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer-section p {
+  font-size:large;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px 0;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+
+#facebook{
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+#whatsapp {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+
+
+/* Default styles for larger screens */
+/* You can define your existing styles here */
+
+/* Media query for small screens */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
   }
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+  /* Adjust header styles */
+  .heading {
+    text-align: center;
     padding: 10px;
   }
 
-  /* Adjustments for the navigation menu */
-  header ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    gap: 10px;
+  /* Adjust slide and image styles */
+  .slide {
+    display: block;
+    text-align: center;
   }
 
-  /* Adjustments for the contact information */
-  #cnt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
+  .slide img {
+    max-width: 100%;
+    height: auto;
   }
 
-  /* Adjustments for the contact information icons */
-  #cnt img {
-    width: 30px;
-    height: 30px;
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+
+  .image {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Adjust footer styles */
+  .footer {
+    text-align: center;
+  }
+
+  /* Adjust other styles as needed */
 }
-
