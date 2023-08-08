@@ -364,7 +364,6 @@
   height: 30px;
 }
 
-
 /* Default styles for larger screens */
 /* You can define your existing styles here */
 
@@ -380,32 +379,23 @@
     padding: 10px;
   }
 
-  /* Adjust slide and image styles */
-  .slide {
-    display: block;
-    text-align: center;
-  }
-
-  .slide img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .main {
+  /* Adjust navbar styles */
+  ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
   }
 
-  .image {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
+  ul li {
+    margin: 5px 0;
   }
 
   /* Adjust footer styles */
   .footer {
     text-align: center;
+    padding: 10px;
   }
 
   /* Adjust other styles as needed */
