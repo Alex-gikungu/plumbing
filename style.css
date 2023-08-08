@@ -373,13 +373,11 @@
     font-size: 14px;
   }
 
-  /* Adjust header styles */
   .heading {
     text-align: center;
     padding: 10px;
   }
 
-  /* Adjust navbar styles */
   ul {
     display: flex;
     flex-direction: column;
@@ -392,11 +390,22 @@
     margin: 5px 0;
   }
 
-  /* Adjust footer styles */
+  .home .slide {
+    display: block;
+    text-align: center;
+  }
+
+  .home .slide img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .photos, .main .image {
+    text-align: center;
+  }
+
   .footer {
     text-align: center;
     padding: 10px;
   }
-
-  /* Adjust other styles as needed */
 }
