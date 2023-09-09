@@ -370,21 +370,34 @@
 /* Media query for small screens */
 @media (max-width: 768px) {
   body {
-    font-size:5px;
+    font-size: 14px;
   }
 
   .heading {
     text-align: center;
+    padding:5px;
+  }
+  .heading img{
+    width:50px;
+    height:30px;
   }
 
-  ul {
-    align-items: center;
+  .heading ul {
+    margin-left:2%;
+    padding:10px;
+    display: flex;
   }
-
-  ul li {
-    margin:5px;
+  
+  .heading li {
+    padding:10px;
+    font-size: 1.5rem;
+    font-weight: 900;
   }
-
+  
+#cnt img {
+  width:50px;
+  height:30px;
+}
   .home .slide {
     display: block;
     text-align: center;
@@ -403,27 +416,4 @@
     text-align: center;
     padding: 10px;
   }
-
-
-  
-  #facebook {
-    width:25px;
-  }
-  
-  #facebook img {
-    width:18px;
-    height: 18px;
-  }
-  
-  #whatsapp {
-    padding-left:0px;
-    width:25px;
-  }
-
-#whatsapp img{
-  width:18px;
-  height: 18px;
-}  
-
-
 }
