@@ -296,26 +296,6 @@
   margin-bottom: 20px;
 }
 
-
-
-
-/* Your existing CSS styles */
-/* 
-.footer {
-  background-color: #f2f2f2;
-  padding: 20px 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-} */
-
 .footer-section {
   flex: 1;
   margin: 10px;
@@ -382,20 +362,72 @@
   .photos, .main .image {
     text-align: center;
   }
-
-  .footer {
-    text-align: center;
-  }
-  .footer-content {
-    display: flex;
-  }
-  .container {
-    margin:auto;
-    align-items: center;
-  }
 }
 
 
 
 
+/* Styles for smartphones */
+@media screen and (max-width: 480px) {
+  .footer {
+    background-color: cornflowerblue;
+    color: #fff;
+    font-size: medium; /* Adjust the font size for mobile */
+    text-align: center; /* Center align text on mobile */
+  }
+
+  .container {
+    margin: 0;
+    padding: 10px; /* Reduce padding for mobile */
+    font-size: small; /* Adjust font size for mobile */
+    display: flex;
+    flex-direction: column; /* Stack content vertically on mobile */
+    align-items: center;
+  }
+
+  .container p {
+    font-size: small; /* Adjust font size for mobile */
+    margin-bottom: 10px; /* Increase margin for spacing on mobile */
+  }
+
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center; /* Center align content on mobile */
+  }
+
+  .footer-section h3 {
+    font-size: medium; /* Adjust font size for mobile */
+    margin-bottom: 10px;
+  }
+
+  .footer-section p {
+    font-size: small; /* Adjust font size for mobile */
+    margin-bottom: 5px;
+  }
+
+  .footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px 0;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align social links on mobile */
+    margin-top: 10px; /* Add some spacing between social links and footer content */
+  }
+
+  #facebook,
+  #whatsapp {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+  }
+}
 
