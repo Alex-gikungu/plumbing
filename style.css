@@ -380,9 +380,9 @@ Media query for small screens
 /* Default styles for larger screens */
 /* You can define your existing styles here */
 
-/* Media query for small screens (smartphones) */
+/* Media query for small screens */
 @media (max-width: 768px) {
-  /* Navbar styles for small screens */
+  /* Navbar styles */
   .heading {
     text-align: center;
     width: auto;
@@ -390,90 +390,77 @@ Media query for small screens
   }
 
   .heading ul {
-    margin: 0;
+    margin-left: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column; /* Stack navigation links vertically */
+    flex-direction: column;
+    align-items: center;
   }
 
   .heading li {
-    padding: 15px; /* Adjust padding for better touch targets */
-    font-size: 1.2rem; /* Adjust font size for small screens */
-    text-align: center; /* Center align navigation links */
+    padding: 20px;
+    font-size: 1rem;
   }
 
-  /* Header image styles for small screens */
+  /* Home section styles */
   .home {
-    height: auto; /* Remove fixed height */
+    height: auto;
+    overflow: visible;
   }
 
   .slide {
     position: relative;
-    width: 100%;
-    height: auto; /* Adjust height for responsive images */
-  }
-
-  .slide.active {
     opacity: 1;
   }
 
-  /* Content text styles for small screens */
   .content {
-    position: static; /* Remove absolute positioning */
+    top: initial;
+    left: initial;
+    transform: initial;
     text-align: center;
-    margin: 20px 0; /* Adjust margins for spacing */
   }
 
-  .slide h1,
-  .slide h3 {
-    margin-bottom: 10px;
-  }
-
-  /* Button styles for small screens */
   .buttons {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .buttons button {
     padding: 10px 20px;
-    margin: 10px 0; /* Add vertical spacing between buttons */
+    margin: 5px;
   }
 
-  /* Photos and main grid styles for small screens */
-  .photos h2,
-  .photos p,
-  .image h2,
-  .image p {
+  /* Photos and Main section styles */
+  .photos, .main .image {
     text-align: center;
-    font-size: 1rem; /* Adjust font size for small screens */
   }
 
   .main {
-    grid-template-columns: repeat(1, 1fr); /* Stack columns on small screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Footer styles for small screens */
+  /* Footer styles */
   .footer-content {
-    flex-direction: column; /* Stack footer sections vertically */
+    flex-direction: column;
     align-items: center;
   }
 
   .footer-section {
-    margin: 10px 0; /* Adjust spacing between footer sections */
-  }
-
-  .footer-section h3,
-  .footer-section p {
-    text-align: center; /* Center align footer content */
+    margin: 10px 0;
+    padding: 10px;
   }
 
   .social-links {
-    margin-top: 20px; /* Add spacing between social links and footer content */
+    justify-content: center;
+    margin-top: 10px;
   }
 
   #facebook,
   #whatsapp {
-    margin: 0; /* Remove individual margins for social links */
+    margin: 0;
+    width: 30px;
+    height: 30px;
   }
 }
 
