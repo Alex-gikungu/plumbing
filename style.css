@@ -374,8 +374,11 @@
   }
 
   .heading {
-    text-align: center;
     padding:5px;
+    width: 100%;
+  }
+  .heading h1{
+    font-size: small;
   }
   .heading img{
     width:50px;
@@ -385,15 +388,16 @@
   .heading ul {
     margin-left:2%;
     padding:10px;
-    display: flex;
+    display:grid;
   }
   
   .heading li {
     padding:10px;
-    font-size: 1.5rem;
-    font-weight: 900;
   }
-  
+  #cnt p {
+    font-size: small;
+    display: grid;
+  }
 #cnt img {
   width:50px;
   height:30px;
