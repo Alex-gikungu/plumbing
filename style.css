@@ -386,6 +386,13 @@
   .footer {
     text-align: center;
   }
+  .footer-content {
+    display: flex;
+  }
+  .container {
+    margin:auto;
+    align-items: center;
+  }
 }
 
 
